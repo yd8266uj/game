@@ -1,0 +1,131 @@
+main {
+  margin-left: 20%;
+}
+
+@media only screen and (max-width: 992px) {
+
+  main {
+    margin-left: 0;
+  }
+
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  color: orange;
+}
+
+h2,h3 {
+  border-bottom: solid 1px gray;
+}
+
+blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  border: none;
+}
+
+p:first-of-type::first-letter {
+  font-size: 130%;
+}
+
+.inventory:after {
+  content: " \00d7"attr(data-quantity);
+  color: gray;
+}
+
+.inventory {
+}
+
+.comment {
+  /* display:none; */
+  color: #4CAF50 !important;
+}
+
+
+.comment:before {
+  content: "/* ";
+}
+
+.comment:after {
+  content: " */";
+}
+
+
+.pin-top {
+  position: relative;
+}
+
+// Class for when element is below threshold
+.pin-bottom {
+  position: relative;
+}
+
+// Class for when element is pinned
+.pinned {
+  position: fixed !important;
+}
+
+
+.read-aloud,.example-of-play {
+  font-style: italic;
+}
+
+.info,.pitfall,.read-aloud,.example-of-play,.subsection {
+  position: relative;
+  padding-left: 77px;
+}
+
+.info:before,.pitfall:before,.read-aloud:before,.example-of-play:before {
+  margin-right: 12px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  top: 14.5px;
+  left: 14.5px;
+  position: absolute;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+}
+
+.info:before {
+  content: 'info';
+  color: white;
+}
+
+.pitfall:before {
+  content: 'warning';
+  color: white;
+}
+
+.read-aloud:before {
+  content: 'record_voice_over';
+  color: gray;
+}
+
+.example-of-play:before {
+  content: 'forum';
+  color: gray;
+}
