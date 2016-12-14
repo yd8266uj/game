@@ -2,14 +2,6 @@ main {
   margin-left: 20%;
 }
 
-@media only screen and (max-width: 992px) {
-
-  main {
-    margin-left: 0;
-  }
-
-}
-
 body {
   display: flex;
   min-height: 100vh;
@@ -24,7 +16,7 @@ a {
   color: orange;
 }
 
-h2,h3 {
+h2 {
   border-bottom: solid 1px gray;
 }
 
@@ -44,6 +36,12 @@ p:first-of-type::first-letter {
   color: gray;
 }
 
+.button-collapse {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  color: gray;
+}
 .inventory {
 }
 
@@ -61,21 +59,17 @@ p:first-of-type::first-letter {
   content: " */";
 }
 
-
 .pin-top {
   position: relative;
 }
 
-// Class for when element is below threshold
 .pin-bottom {
   position: relative;
 }
 
-// Class for when element is pinned
 .pinned {
   position: fixed !important;
 }
-
 
 .read-aloud,.example-of-play {
   font-style: italic;
@@ -128,4 +122,14 @@ p:first-of-type::first-letter {
 .example-of-play:before {
   content: 'forum';
   color: gray;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    margin-left: 0;
+  }
+  
+  .subsection {
+    padding-left: 0;
+  }
 }
