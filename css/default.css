@@ -36,12 +36,12 @@ p:first-of-type::first-letter {
   color: gray;
 }
 
-.button-collapse {
+.nav-fixed {
   position: fixed;
-  top: 12px;
-  right: 12px;
-  color: gray;
+  top:14.5px;
+  right:14.5px
 }
+
 .inventory {
 }
 
