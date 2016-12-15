@@ -75,7 +75,7 @@ p:first-of-type::first-letter {
   font-style: italic;
 }
 
-.info,.pitfall,.read-aloud,.example-of-play,.subsection {
+.info,.pitfall,.read-aloud,.example-of-play {
   position: relative;
   padding-left: 77px;
 }
@@ -127,9 +127,5 @@ p:first-of-type::first-letter {
 @media only screen and (max-width: 992px) {
   main {
     margin-left: 0;
-  }
-  
-  .subsection {
-    padding-left: 0;
   }
 }
