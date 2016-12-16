@@ -12,8 +12,9 @@ main {
   flex: 1 0 auto;
 }
 
-a {
-  color: orange;
+a.def-link {
+  text-decoration: underline;
+  color: inherit;
 }
 
 h2 {
