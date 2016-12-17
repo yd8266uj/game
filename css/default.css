@@ -32,6 +32,10 @@ p:first-of-type::first-letter {
   font-size: 130%;
 }
 
+.pitfall,.info,.read-aloud,.example-of-play {
+
+}
+
 .inventory:after {
   content: " \00d7"attr(data-quantity);
   color: gray;
